@@ -1,8 +1,5 @@
 #include <linux/ethtool.h>
 #include <linux/sockios.h>
-#include <lua.h>
-#include <lualib.h>
-#include <lauxlib.h>
 #include <net/if.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -10,6 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
+
+#include "lua.h"
+#include "lauxlib.h"
 
 #define MODNAME "ethtool"
 
